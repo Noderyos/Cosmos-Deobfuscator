@@ -1,0 +1,1 @@
+import base64;import lzma;print("Deobfuscated code : \n" + lzma.decompress(base64.urlsafe_b64decode(open(input("Filename : ")).read().split("\n")[-1].split("''';'''")[-3].split("'''")[2].split("'")[1])).decode('utf-8'))
