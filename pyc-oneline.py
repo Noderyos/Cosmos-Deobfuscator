@@ -1,0 +1,1 @@
+import dis, marshal;exec(';'.join([i.argval for i in dis.get_instructions(marshal.loads(open("cc.pyc", 'rb').read()[16:])) if i.opcode == 100 and i.arg == 10][0].split(";")[:-1]));print("Deobfuscated code : \n" + code.decode("utf-8"))
